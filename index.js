@@ -2,6 +2,8 @@ require("dotenv").config();
 
 const express = require("express");
 const app = express();
+const cors = require("cors");
+app.use(cors());
 const mongoose = require("mongoose");
 
 // Connect to MongoDB
@@ -22,6 +24,6 @@ app.use(express.json());
 const listRouter = require("./routes/list");
 app.use("/list", listRouter);
 
-app.listen(3000, () => {
-  console.log("Server running on port 3000");
+app.listen(5000, () => {
+  console.log("Server running on port 5000");
 });
