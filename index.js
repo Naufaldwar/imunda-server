@@ -8,7 +8,7 @@ const mongoose = require("mongoose");
 
 // Connect to MongoDB
 mongoose.connect(
-  "mongodb://naufaldwiariananto:ym4pHpHCzlvMrGzQ@ac-2p2xh3l-shard-00-00.ngpiped.mongodb.net:27017,ac-2p2xh3l-shard-00-01.ngpiped.mongodb.net:27017,ac-2p2xh3l-shard-00-02.ngpiped.mongodb.net:27017/?ssl=true&replicaSet=atlas-hfazuy-shard-0&authSource=admin&retryWrites=true&w=majority",
+  "mongodb://naufaldwiariananto:suqc15NzJaCG9Lu2@ac-wxu6n3x-shard-00-00.ydcdonf.mongodb.net:27017,ac-wxu6n3x-shard-00-01.ydcdonf.mongodb.net:27017,ac-wxu6n3x-shard-00-02.ydcdonf.mongodb.net:27017/?ssl=true&replicaSet=atlas-7qlv4q-shard-0&authSource=admin&retryWrites=true&w=majority",
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
