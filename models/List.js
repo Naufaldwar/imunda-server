@@ -33,10 +33,10 @@ const ListSchema = new Schema({
     type: String,
     required: true,
   },
-  //   date: {
-  //     type: Date,
-  //     default: Date.now,
-  //   },
+  date: {
+    type: Date,
+    default: Date.now,
+  },
 });
 
 const List = model("list", ListSchema);
