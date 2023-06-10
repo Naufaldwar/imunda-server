@@ -33,6 +33,10 @@ const ListSchema = new Schema({
     type: String,
     required: true,
   },
+  total_cost: {
+    type: Number,
+    required: true,
+  },
   date: {
     type: Date,
     default: Date.now,
