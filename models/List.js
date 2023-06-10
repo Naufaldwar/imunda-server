@@ -37,6 +37,10 @@ const ListSchema = new Schema({
     type: Number,
     required: true,
   },
+  checked: {
+    type: Boolean,
+    default: false,
+  },
   date: {
     type: Date,
     default: Date.now,
