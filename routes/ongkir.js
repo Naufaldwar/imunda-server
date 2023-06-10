@@ -4,7 +4,7 @@ const axios = require("axios");
 
 router.get("/city", async (req, res) => {
   try {
-    const apiKey = "520f9b99617a9af001a9b4a2d4c31717";
+    const apiKey = "d64e10d757bd8868de50234fd1df0d00";
     const response = await axios.get(
       `https://api.rajaongkir.com/starter/city?key=${apiKey}`
     );
