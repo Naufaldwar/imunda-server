@@ -5,9 +5,14 @@ const axios = require("axios");
 router.get("/city", async (req, res) => {
   try {
     // 520f9b99617a9af001a9b4a2d4c31717 , ce8b738b8260f386ae528dcff159a7b0
-    const apiKey = "ce8b738b8260f386ae528dcff159a7b0";
+    const { apiKey } = req.body;
     const response = await axios.get(
-      `https://api.rajaongkir.com/starter/city?key=${apiKey}`
+      `https://api.rajaongkir.com/starter/city`,
+      {
+        headers: {
+          key: apiKey,
+        },
+      }
     );
     const cities = response.data.rajaongkir.results;
     res.json(cities);
